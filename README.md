@@ -3,4 +3,4 @@ Read this very carefully
 
 User 1 says "hi"
 
-I want it th way
+I want it this way
