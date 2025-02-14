@@ -1,0 +1,10 @@
+^C:\USERS\DONAF\2024_EEYDO1\WORKSHEET5\BUILD\CMAKEFILES\DF48019AE2B194B92D3575CC1A1433CE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Donaf/2024_eeydo1/Worksheet5 -BC:/Users/Donaf/2024_eeydo1/Worksheet5/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Donaf/2024_eeydo1/Worksheet5/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

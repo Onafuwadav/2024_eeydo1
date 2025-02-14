@@ -1,0 +1,6 @@
+C:/Users/Donaf/2024_eeydo1/Worksheet5/build/CMakeFiles/maths.dir
+C:/Users/Donaf/2024_eeydo1/Worksheet5/build/CMakeFiles/calc.dir
+C:/Users/Donaf/2024_eeydo1/Worksheet5/build/CMakeFiles/PACKAGE.dir
+C:/Users/Donaf/2024_eeydo1/Worksheet5/build/CMakeFiles/INSTALL.dir
+C:/Users/Donaf/2024_eeydo1/Worksheet5/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Donaf/2024_eeydo1/Worksheet5/build/CMakeFiles/ZERO_CHECK.dir
