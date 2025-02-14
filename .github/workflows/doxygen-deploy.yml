@@ -1,33 +1,31 @@
+name: Deploy Worksheet5
+
+on:
+  push:
+    branches:  [ master ]
+
 jobs:
   deploy-worksheet5:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout code
-      - name: Checkout code
+      # Step 1: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Ensures full history is checked out
 
-      # Install Doxygen
+      # Step 2: Install Doxygen
       - name: Install doxygen
         run: sudo apt-get install -y doxygen
 
-      # Run Doxygen on Worksheet5 folder
+      # Step 3: Run Doxygen
       - name: Run Doxygen
         working-directory: ${{ github.workspace }}/Worksheet5
         run: doxygen
 
-      # Set Git config for pushing
-      - name: Set Git config
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          branch: gh-pages  # Specify the target branch
-          folder: ${{ github.workspace }}/Worksheet5/html  # Path to the folder to deploy
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token here
+          branch: gh-pages  # Deploy to GitHub Pages branch
+          folder: ${{ github.workspace }}/Worksheet5/html  # Folder to deploy
+          token: ${{ secrets.PAT_TOKEN }}  # Use GitHub token for authentication
