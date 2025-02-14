@@ -2,7 +2,8 @@ name: doxygen=deploy
 
 on:
   push:
-    branches: [ master ] # Make sure this is the correct branch
+    branches:
+      - master  # Ensure this is your default branch
 
 jobs:
   deploy-worksheet5:
@@ -10,10 +11,10 @@ jobs:
 
     steps:
       # Step 1: Checkout code
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Ensure full history to avoid issues when pushing to gh-pages
+          fetch-depth: 0  # Ensures full history is checked out
 
       # Step 2: Install Doxygen
       - name: Install doxygen
@@ -21,13 +22,19 @@ jobs:
 
       # Step 3: Run Doxygen on the Worksheet5 folder
       - name: Run Doxygen
-        working-directory: ${{ github.workspace }}/Worksheet5
+        working-directory: ${{ github.workspace }}/Worksheet5  # Ensure this path is correct
         run: doxygen
 
-      # Step 4: Deploy to GitHub Pages
-      - name: Deploy
+      # Step 4: Set Git config for pushing
+      - name: Set Git config
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          branch: gh-pages # Specify the branch to deploy to
-          folder: ${{ github.workspace }}/Worksheet5/html
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use the token for authentication
+          branch: gh-pages  # Specify the target branch
+          folder: ${{ github.workspace }}/Worksheet5/html  # Ensure this path is correct
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub's token to authenticate
