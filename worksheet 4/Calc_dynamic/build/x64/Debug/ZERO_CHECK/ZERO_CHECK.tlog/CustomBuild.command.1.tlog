@@ -1,0 +1,10 @@
+^C:\USERS\DONAF\2024_EEYDO1\WORKSHEET 4\CALC_DYNAMIC\BUILD\CMAKEFILES\3527007540EA543E8FE5A59C1F71678D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Donaf/2024_eeydo1/worksheet 4/Calc_dynamic" "-BC:/Users/Donaf/2024_eeydo1/worksheet 4/Calc_dynamic/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Donaf/2024_eeydo1/worksheet 4/Calc_dynamic/build/calc.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

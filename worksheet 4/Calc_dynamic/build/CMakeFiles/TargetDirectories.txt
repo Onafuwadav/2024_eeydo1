@@ -1,0 +1,4 @@
+C:/Users/Donaf/2024_eeydo1/worksheet 4/Calc_dynamic/build/CMakeFiles/maths.dir
+C:/Users/Donaf/2024_eeydo1/worksheet 4/Calc_dynamic/build/CMakeFiles/calc.dir
+C:/Users/Donaf/2024_eeydo1/worksheet 4/Calc_dynamic/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Donaf/2024_eeydo1/worksheet 4/Calc_dynamic/build/CMakeFiles/ZERO_CHECK.dir
