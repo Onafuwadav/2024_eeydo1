@@ -1,0 +1,3 @@
+C:/Users/Donaf/2024_eeydo1/worksheet 4/hello_cmake/build/CMakeFiles/hello.dir
+C:/Users/Donaf/2024_eeydo1/worksheet 4/hello_cmake/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Donaf/2024_eeydo1/worksheet 4/hello_cmake/build/CMakeFiles/ZERO_CHECK.dir

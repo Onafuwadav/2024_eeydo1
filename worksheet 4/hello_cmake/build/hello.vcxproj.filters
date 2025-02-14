@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Donaf\2024_eeydo1\worksheet 4\hello_cmake\hello.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Donaf\2024_eeydo1\worksheet 4\hello_cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3E4CD0BA-CAF3-3650-87F0-B21E1CE4295F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
