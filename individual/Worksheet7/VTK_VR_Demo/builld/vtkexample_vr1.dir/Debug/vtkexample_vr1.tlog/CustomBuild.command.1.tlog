@@ -1,0 +1,10 @@
+^C:\USERS\DONAF\EEEE2076\INDIVIDUAL\WORKSHEET7\VTK_VR_DEMO\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Donaf/EEEE2076/individual/Worksheet7/VTK_VR_Demo -BC:/Users/Donaf/EEEE2076/individual/Worksheet7/VTK_VR_Demo/builld --check-stamp-file C:/Users/Donaf/EEEE2076/individual/Worksheet7/VTK_VR_Demo/builld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
